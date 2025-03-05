@@ -1,5 +1,6 @@
 import React from 'react';
 import Message from './Message';
+import Paraw from './Paraw';
 
 
 const Phone = () => {
@@ -23,6 +24,7 @@ const PhoneHeader = () => (
 
 const PhoneScreen = () => (
     <div id="screen">
+        <Paraw/>
         <Message/>
 
     </div>

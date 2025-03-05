@@ -10,53 +10,50 @@ import Phone from "./components/Phone";
 
 export default function Home() {
   return (
-    <div className="grid min-h-screen gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
+    <div className="grid min-h-screen gap-8 sm:gap-16 sm:p-10 lg:p-20 font-[family-name:var(--font-geist-sans)]">
       <main className="flex flex-col items-center">
-      <div className="flex items-start">
-      <Polaroid caption="Bacolod City" image="/Bacolod.webp" comment="Land of Sweet Surpises 🎭"/>
-      <Polaroid caption="Iloilo City" image="/Iloilo.jpg" comment="Where the past is always present 💖"/>
-      <Polaroid caption="Capiz" image="/Capiz.jpg" comment="Land of the Aswang kuno 👻"/>
-      <Polaroid caption="Antique" image="/Antique.jpg" comment="Where mountains meet the see 🌄"/>
-      <Polaroid caption="Aklan" image="/Aklan.png" comment="Musyun sa Akean, Feel Alive, Feel Aklan ⛵"/>
-      <Polaroid caption="Guimaras" image="/Guimaras.webp" comment="World's sweetest Mango 🥭"/>
-      </div>
-      <br/>
+        <div className="flex flex-wrap justify-center gap-4 sm:gap-8">
+          <Polaroid caption="Bacolod City" image="/Bacolod.webp" comment="Land of Sweet Surpises 🎭"/>
+          <Polaroid caption="Iloilo City" image="/Iloilo.jpg" comment="Where the past is always present 💖"/>
+          <Polaroid caption="Capiz" image="/Capiz.jpg" comment="Land of the Aswang kuno 👻"/>
+          <Polaroid caption="Antique" image="/Antique.jpg" comment="Where mountains meet the sea 🌄"/>
+          <Polaroid caption="Aklan" image="/Aklan.png" comment="Musyun sa Akean, Feel Alive, Feel Aklan ⛵"/>
+          <Polaroid caption="Guimaras" image="/Guimaras.webp" comment="World's sweetest Mango 🥭"/>
+        </div>
+        <br/>
         <Landing/>
         <SearchBar />
-        <div className="flex items-center justify-center space-x-4">
-          
-          <Link href="/grammar" className="flex items-center p-4 bg-yellow-100 rounded-lg shadow-lg hover:scale-105 transform transition-all duration-300">
+        <div className="flex flex-wrap justify-center gap-4 sm:gap-8 mt-8">
+          <Link href="/grammar" className="flex items-center p-4 bg-yellow-100 rounded-lg shadow-lg hover:scale-105 transform transition-all duration-300 w-full sm:w-auto">
             {/* <Image className="dark:invert inline-block mr-2" src="/grammar.svg" alt="Grammatika logo" width={38} height={38} priority /> */}
             <div>🛟</div>
             📝 Grammatika
           </Link>
-          <Link href="/grammar" className="flex items-center p-4 bg-blue-100 rounded-lg shadow-lg hover:scale-105 transform transition-all duration-300">
+          <Link href="/grammar" className="flex items-center p-4 bg-blue-100 rounded-lg shadow-lg hover:scale-105 transform transition-all duration-300 w-full sm:w-auto">
             {/* <Image className="dark:invert inline-block mr-2" src="/hampang.svg" alt="Hampang logo" width={38} height={38} priority /> */}
             <div>🛟</div>
             🛝Hampang
           </Link>
-          <Link href="/grammar" className="flex items-center p-4 bg-green-100 rounded-lg shadow-lg hover:scale-105 transform transition-all duration-300">
+          <Link href="/grammar" className="flex items-center p-4 bg-green-100 rounded-lg shadow-lg hover:scale-105 transform transition-all duration-300 w-full sm:w-auto">
             {/* <Image className="dark:invert inline-block mr-2" src="/archives.svg" alt="Katilingban logo" width={38} height={38} priority /> */}
             <div>🛟</div>
             📑Katilingban
           </Link>
-          <Link href="/grammar" className="flex items-center p-4 bg-red-100 rounded-lg shadow-lg hover:scale-105 transform transition-all duration-300">
+          <Link href="/grammar" className="flex items-center p-4 bg-red-100 rounded-lg shadow-lg hover:scale-105 transform transition-all duration-300 w-full sm:w-auto">
             {/* <Image className="dark:invert inline-block mr-2" src="/archives.svg" alt="Katilingban logo" width={38} height={38} priority /> */}
             <div>🛟</div>
             🗞️ Balita
           </Link>
         </div>
 
-        <Paraw/>
+        {/* <Paraw/> */}
         <Phone/>
         {/* <Message/> */}
-
-
       </main>
-      <footer className="row-start-3 flex gap-6 flex-wrap items-center justify-center">
+
+      <footer className="row-start-3 flex gap-6 flex-wrap items-center justify-center py-4 mt-12">
         {/* Footer content */}
       </footer>
     </div>
-
   );
 }

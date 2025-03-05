@@ -4,9 +4,8 @@ import { useState, useEffect } from "react";
 import Image from "next/image";
 import localFont from 'next/font/local'
 
-
-
-const LatoBold = localFont({src: '../../fonts/Lato/Lato-Bold.ttf'})
+// Load the Lato-Bold font
+const LatoBold = localFont({ src: '../../fonts/Lato/Lato-Bold.ttf' })
 
 export default function NavBar() {
   const [isNightMode, setIsNightMode] = useState(false);
@@ -31,18 +30,18 @@ export default function NavBar() {
   }, [isNightMode]);
 
   return (
-    <nav className="navbar">
-              <Image
-          className="dark:invert"
-          src="/paraw.png"
-          alt="Next.js logo"
-          width={38}
-          height={38}
-          priority
-        />
-      <div className="logo">Kasimanwa</div>
+    <nav className="navbar p-4 flex items-center justify-between bg-white dark:bg-gray-900 text-black dark:text-white">
+      <Image
+        className="dark:invert"
+        src="/paraw.png"
+        alt="Next.js logo"
+        width={38}
+        height={38}
+        priority
+      />
+      <div className={`logo text-xl font-bold ${LatoBold.className}`}>Kasimanwa</div>
       <button
-        className="nightmode-switch"
+        className="nightmode-switch p-2 bg-yellow-200 dark:bg-yellow-800 rounded-md transition-all duration-300"
         onClick={() => setIsNightMode(!isNightMode)}
       >
         {isNightMode ? "🌙 Dulom" : "🌞 Sanag"}
