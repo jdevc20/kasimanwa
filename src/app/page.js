@@ -7,6 +7,7 @@ import Paraw from "./components/Paraw";
 import Message from "./components/Message";
 import Polaroid from "./components/Polaroid";
 import Phone from "./components/Phone";
+import Footer from "./components/Footer";
 
 export default function Home() {
   return (
@@ -15,6 +16,37 @@ export default function Home() {
         <Landing />
 
         <SearchBar />
+        <div className="flex flex-wrap justify-center gap-4 sm:gap-8 mt-8 p-2">
+          <Link
+            href="/grammar"
+            className="flex items-center p-4 bg-yellow-100 rounded-lg shadow-lg hover:scale-105 transform transition-all duration-300  sm:w-auto"
+          >
+            <div>🛟</div>
+            📝 Grammatika
+          </Link>
+          <Link
+            href="/grammar"
+            className="flex items-center p-4 bg-blue-100 rounded-lg shadow-lg hover:scale-105 transform transition-all duration-300  sm:w-auto"
+          >
+            <div>🛟</div>
+            🛝 Hampang
+          </Link>
+          <Link
+            href="/grammar"
+            className="flex items-center p-4 bg-green-100 rounded-lg shadow-lg hover:scale-105 transform transition-all duration-300  sm:w-auto"
+          >
+            <div>🛟</div>
+            📑 Katilingban
+          </Link>
+          <Link
+            href="/grammar"
+            className="flex items-center p-4 bg-red-100 rounded-lg shadow-lg hover:scale-105 transform transition-all duration-300  sm:w-auto"
+          >
+            <div>🛟</div>
+            🗞️ Balita
+          </Link>
+        </div>
+
         <div className="flex flex-wrap justify-center gap-4 sm:gap-8">
           <Polaroid
             caption="Bacolod City"
@@ -56,42 +88,12 @@ export default function Home() {
 
         <br />
 
-        <div className="flex flex-wrap justify-center gap-4 sm:gap-8 mt-8 p-2">
-          <Link
-            href="/grammar"
-            className="flex items-center p-4 bg-yellow-100 rounded-lg shadow-lg hover:scale-105 transform transition-all duration-300  sm:w-auto"
-          >
-            <div>🛟</div>
-            📝 Grammatika
-          </Link>
-          <Link
-            href="/grammar"
-            className="flex items-center p-4 bg-blue-100 rounded-lg shadow-lg hover:scale-105 transform transition-all duration-300  sm:w-auto"
-          >
-            <div>🛟</div>
-            🛝 Hampang
-          </Link>
-          <Link
-            href="/grammar"
-            className="flex items-center p-4 bg-green-100 rounded-lg shadow-lg hover:scale-105 transform transition-all duration-300  sm:w-auto"
-          >
-            <div>🛟</div>
-            📑 Katilingban
-          </Link>
-          <Link
-            href="/grammar"
-            className="flex items-center p-4 bg-red-100 rounded-lg shadow-lg hover:scale-105 transform transition-all duration-300  sm:w-auto"
-          >
-            <div>🛟</div>
-            🗞️ Balita
-          </Link>
-        </div>
 
         <Phone />
       </main>
 
       <footer className="row-start-3 flex gap-6 flex-wrap items-center justify-center py-4 mt-12">
-        {/* Footer content */}
+        <Footer/>
       </footer>
     </div>
   );
