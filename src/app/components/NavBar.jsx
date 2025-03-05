@@ -30,7 +30,7 @@ export default function NavBar() {
   }, [isNightMode]);
 
   return (
-    <nav className="navbar p-4 flex items-center justify-between bg-white dark:bg-gray-900 text-black dark:text-white">
+    <nav className="navbar p-4 flex items-center justify-between text-black dark:text-white">
       <Image
         className="dark:invert"
         src="/paraw.png"
