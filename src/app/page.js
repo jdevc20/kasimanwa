@@ -56,6 +56,14 @@ export default function Home() {
             <div>🛟</div>
             🗞️ Balita
           </Link>
+          <Link
+            href="/dictionary"
+            className="flex items-center p-4 bg-red-100 rounded-lg shadow-lg hover:scale-105 transform transition-all duration-300  sm:w-auto"
+          >
+            {/* <Image className="dark:invert inline-block mr-2" src="/archives.svg" alt="Katilingban logo" width={38} height={38} priority /> */}
+            <div>🛟</div>
+            📚 Dictionary
+          </Link>
         </div>
 
 
